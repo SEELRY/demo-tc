@@ -9996,6 +9996,9 @@ textarea.form-control {
   color: white;
   letter-spacing: 2px;
 }
+
+
+
 .t-about {
   padding-bottom: 0em;
 }
@@ -10050,6 +10053,23 @@ textarea.form-control {
 .t-about .section-2 {
   width: 100%;
   height: 100%;
+}
+.t-about .disc h2 {
+  color: #225d95;
+  font-weight: 800;
+  padding-bottom: 40px;
+}
+.t-about .disc p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 12px;
+}
+.t-about .disc span {
+  color: #225d95;
+  font-size: larger;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 12px;
 }
 
 /* 产品项目 */
