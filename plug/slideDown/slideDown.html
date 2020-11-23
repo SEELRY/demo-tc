@@ -1,0 +1,32 @@
+<script src="http://libs.baidu.com/jquery/1.7.0/jquery.min.js"></script>
+<script> 
+    $(document).ready(function(){
+    $("#flip").hover(function(){
+        $("#panel").stop().slideToggle("slow");
+    });
+    });
+</script>
+    
+<style type="text/css"> 
+#panel,#flip
+{
+    padding:5px;
+    text-align:center;
+    background-color:#e5eecc;
+    border:solid 1px #c3c3c3;
+    top: 500px;
+}
+#panel
+{
+    padding:50px;
+    display:none;
+}
+</style>
+
+
+<div>
+    <div style="height: 300px; width: 300px;">
+        <div id="flip">点我滑下面板</div>
+        <div id="panel">Hello world!</div>	
+    </div>
+</div>
