@@ -237,6 +237,10 @@ a,img{border:0;text-decoration:none;}
 	-moz-transition:all .5s ease-in-out;
 	transition:all .5s ease-in-out;
 }
+.show-regin:hover{
+	left: -2px;
+    top: -4px;
+}
 .online-node .show-regin,
 .region-list:hover .show-regin,
 .underline-node .show-regin,
