@@ -10083,6 +10083,7 @@ textarea.form-control {
   border-radius: 3px;
   box-shadow: 5px 5px 10px rgb(0,0,0,0.05);
   padding: 4px;
+  display: none;
 }
 .t-about .t-map .introduce .d-left {
   float: left;
