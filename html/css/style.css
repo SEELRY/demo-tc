@@ -10200,6 +10200,39 @@ textarea.form-control {
 .t-t-box {
   padding-left: 0rem !important;
 }
+.t-profile-box {
+  padding: 0!important;
+
+}
+.t-profile-box .t-profile-img {
+  width: 64px;
+  height: 68px;
+  background: url(../images/teacher.png);
+  position: relative;
+}
+.t-profile-box .t-profile-img:hover img{
+  width: 37px;
+  height: 37px;
+  top:8px;
+  left:24px;
+}
+.t-profile-box .t-profile-img img{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 26px;
+}
+.t-profile-box .computer {
+  position: absolute;
+  display: none;
+  background: url(../images/computer.png);
+  width: 733px;
+  height: 423px;
+  top: 100px;
+  left: -100px;
+}
 .t-environment h2 {
   color: #f79c0e;
 }
