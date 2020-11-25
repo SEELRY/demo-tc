@@ -10227,11 +10227,87 @@ textarea.form-control {
 .t-profile-box .computer {
   position: absolute;
   display: none;
-  background: url(../images/computer.png);
+  background: url(../images/computer_b.png);
   width: 733px;
   height: 423px;
   top: 100px;
   left: -100px;
+}
+.t-profile-box .show-con {
+  width: 551px;
+  height: 343px;
+  margin: 28px auto 0;
+  /* background: url(/static/desktop/static/index/img/tea/teacher_back__1f09517.png) no-repeat center; */
+  /* background-size: 100% 100%; */
+  overflow: hidden;
+  position: relative;
+}
+.t-profile-box .show-con .lyh {
+  min-height: 185px;
+  position: relative;
+  padding: 50px 0 0 205px;
+}
+.t-profile-box .show-con .tea7 .avator {
+  left: 25px;
+  position: absolute;
+  top: 25px;
+  height: 385px;
+}
+.t-profile-box .show-con .lyh .name {
+  font-size: 30px;
+  color: #fff;
+  margin-left: 15px;
+  text-align: left;
+}
+.t-profile-box .show-con .lyh ul {
+  margin: 10px 0 0 16px;
+  /* *zoom: 1; */
+}
+.t-profile-box .show-con .lyh ul li {
+  height: 24px;
+  float: left;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 5px 10px;
+  color: #fff;
+  background: #e47b8a;
+  border-radius: 5px;
+  margin-right: 9px;
+}
+.show-con .lyh .achievements {
+  width: 310px;
+  height: 145px;
+  margin-top: 15px;
+  background: url(../images/achievement.png) no-repeat top center;
+  background-size: 100% 100%;
+}
+.show-con .lyh .achievements p:nth-child(1) {
+  padding-top: 25px;
+}
+.show-con .lyh .achievements p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 25px 36px 40px;
+  color: #000;
+  max-height: 47px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.show-con .bottom {
+  position: absolute;
+  bottom: 15px;
+  right: 90px;
+  text-align: left;
+}
+#teachPosition .teach-map-container .show-con .bottom .feature {
+  display: block;
+  font-size: 17px;
+  color: #484848;
+  text-align: left;
 }
 .t-environment h2 {
   color: #f79c0e;
