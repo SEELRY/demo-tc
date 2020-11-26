@@ -10189,12 +10189,12 @@ textarea.form-control {
   float: left;
   margin-left: 24px;
 }
-.t-teacher ul:before, .t-teacher ul:after {
+.t-teacher ul li:before, .t-teacher ul li:after {
   display: table;
   content: "";
   line-height: 0;
 }
-.t-teacher ul:after {
+.t-teacher ul li:after {
   clear: both;
 }
 .t-t-box {
@@ -10265,7 +10265,7 @@ textarea.form-control {
 }
 
 .t-profile-box .show-con .lyh ul li {
-  height: 24px;
+  /* height: 24px; */
   float: left;
   font-size: 15px;
   line-height: 24px;
@@ -10297,6 +10297,14 @@ textarea.form-control {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+.show-con ul:before, .show-con ul:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.show-con ul:after {
+  clear: both;
 }
 .show-con .bottom {
   text-align: left;
