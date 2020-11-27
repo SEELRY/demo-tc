@@ -8158,7 +8158,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
-  color: #233e62;
+  color: #ffa000;
   font-weight: 400; }
 
 .text-primary {
@@ -8751,16 +8751,16 @@ h1, h2, h3, h4, h5,
     border-radius: 50%; }
     .services .icon span {
       font-size: 50px;
-      color: #1b9ce3; }
+      color: #ffa000; }
   @media (max-width: 767.98px) {
     .services .media-body {
       padding-bottom: 3.5em !important; } }
   .services .media-body h3 {
     font-weight: 700;
     font-size: 20px;
-    color: #233e62; }
+    color: #ffa000; }
   .services.active, .services:hover {
-    background: #1b9ce3; }
+    background: #00ab84; }
     .services.active .icon span, .services:hover .icon span {
       color: #fff; }
     .services.active .media-body, .services:hover .media-body {
@@ -8789,12 +8789,12 @@ h1, h2, h3, h4, h5,
         border-bottom: 1px solid rgba(0, 0, 0, 0.05); } }
   .services-2 .icon span {
     font-size: 50px;
-    color: #1b9ce3; }
+    color: #ffa000; }
   .services-2 h3 {
     font-size: 20px;
     font-weight: 700; }
   .services-2:hover {
-    background: #1b9ce3;
+    background: #00ab84;
     -webkit-box-shadow: 0px 0px 27px -16px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 27px -16px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 27px -16px rgba(0, 0, 0, 0.75);
