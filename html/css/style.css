@@ -10347,3 +10347,10 @@ textarea.form-control {
 .teacher-pic .project {
   height: 460px;
 }
+.teacher-pic .project .text {
+  margin-top: 100%;
+}
+.teacher-pic .project .overlay {
+  margin-top: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
