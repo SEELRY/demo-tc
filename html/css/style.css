@@ -10050,6 +10050,9 @@ textarea.form-control {
 .t-about .ftco-section {
   padding: 4em 0 0;
 }
+.t-about .heading-section strong {
+  color: #004998;
+}
 .t-about .section-2 {
   width: 100%;
   height: 100%;
