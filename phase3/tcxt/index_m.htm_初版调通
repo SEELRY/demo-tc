@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>{dede:global.cfg_webname/}</title>
+	<meta charset="utf-8">
+	<meta name="description" content="{dede:global.cfg_description/}" />
+	<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/animate.css">
+    
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/aos.css">
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/flaticon.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/icomoon.css">
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/css/map.css"/> -->
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/css/tcxt-wap.css"/>
+
+  </head>
+  <body>
+	{dede:include filename="head_tc.htm"/}
+    <!-- END nav -->
+    <section class="home-slider owl-carousel t-banner">
+		{dede:arclist  row="10" typeid="15" orderby="id" orderway="desc"}
+		<a href="[field:arcurl /]">
+			<div class="slider-item" style="background-image:url([field:picname/]);">
+			</div>
+		</a>
+		{/dede:arclist}
+	</section>
+	<!-- //banner图 -->
+	<!-- 品牌简介 -->
+    <div class="row tw-about ftco-animate">
+		<div class="tw-title tw-blue">
+		  <p>ABOUT US</p>
+		  <h2>品牌介绍</h2>
+		</div>
+		<div class="col-md-12 tw-a-bg">
+		  <!-- <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+		  <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>-->
+		  <div class="left"><h3 class="tw-white">率先引入哈弗大学AINT跨学科教育理念</h3></div>
+		  <div class="right"><p>同程学堂跨学科英语（中国）总部传承世界名校AINT跨学科教育理念，与世界500强学习研究机构美国圣智学习集团联合研发跨学科少儿英语教材，获得美国国家地理倾力授权，营造主题场景式“多学科共享英语课堂”；让孩子在学习纯正美语的同时，融入音乐、艺术、数学、科学、历史、地理、生物等多学科知识，通过线下主题场景课。</p></div>
+		</div>
+		<div class="col-md-12 tw-a2">
+		  <video width="100%" height="260" poster="http://seelrydev.xunnn.com/templets/tcxt/style/images/video-pic-m.jpg" controls>
+			<source src="https://jmy-video.wejianzhan.com/62c54c56bd59dee35498839bcde68696_1920_1080.mp4" type="video/mp4">
+			<source src="movie.ogg" type="video/ogg">
+			您的浏览器不支持 HTML5 video 标签。
+		  </video>
+		</div>
+	</div>
+	<!-- //品牌简介 -->
+	<!-- 报名表单 -->
+	<div class="row featurette tw-from bg-light  ftco-animate">
+	<div class="from-width">
+		<div class="col-md-12">
+		<h2 class="text-center title">活动期间，加盟费立享折扣优惠</h2>
+		<form action="#" class=" contact-form">
+			
+			<div class="form-group">
+			<input type="text" class="form-control" placeholder="姓名（已加密 ，请放心填写）">
+			</div>
+			<div class="form-group">
+			<input type="text" class="form-control" placeholder="电话（已加密 ，请放心填写）">
+			</div>
+			<div class="form-group">
+			<input type="text" class="form-control" placeholder="地区（已加密 ，请放心填写）">
+			</div>
+			<div class="form-group">
+			<input type="submit" value="立即获取加盟优惠" class="btn btn-primary py-2 px-5">
+			</div>
+		</form>
+		
+		</div>
+	</div>
+	</div>
+	<!-- //报名表单 -->
+	<!-- 学校规模 -->
+	<div class="row featurette tw-number ftco-animate">
+		<div class="tw-title tw-blue">
+		  <p>ABOUT US</p>
+		  <h2>学校规模</h2>
+		</div>
+		<div class="container" id="section-counter">
+			<div class="tw-q2">
+				<strong class="number" data-number="7">0</strong><span>年</span>
+                <br>
+                <div class="desc">成立7年</div>
+			</div>
+			<div class="tw-q2">
+				<strong class="number" data-number="200">0</strong><span>+</span>
+                <br>
+                <div class="desc">覆盖200多个城市</div>
+			</div>
+			<div class="tw-q2 b">
+				<strong class="number" data-number="300">0</strong><span>+</span>
+                <br>
+                <div class="desc">全国300多家校区</div>
+			</div>
+			<div class="tw-q2 b">
+				<strong class="number" data-number="100000">0</strong><span>+</span>
+                <br>
+                <div class="desc">为1万名学生提供服务</div>
+			</div>
+		</div>
+		<!-- <div class="container">
+			<div class="col-md-4">333333</div>	
+			<div class="col-md-4">444444</div>
+		</div> -->
+	</div>
+	<!-- //学校规模 -->
+
+	<!-- 产品项目 -->
+	<section class="ftco-section ftco-no-pb tw-project">
+		<div class="container">
+		<div class="row no-gutters justify-content-center mb-5">
+			<div class="tw-title tw-blue">
+				<p>COURSE PRODUCTS</p>
+				<h2>课程产品</h2>
+			</div>
+		</div>
+		<div class="row no-gutters">
+			{dede:arclist row="6" typeid="2" titlelen="50" orderby="id" orderway="desc"}
+			  <div class="col-6">
+				<a href="[field:arcurl /]">
+				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url([field:picname/]);">
+				</div>
+				</a>
+				<div class="t-title ftco-animate">[field:title/]</div>
+			  </div>
+			{/dede:arclist}  
+
+		</div>
+		</div>
+	</section>
+	<!-- //产品项目 -->
+	<!-- 核心科技 -->
+	<section class="ftco-section ftco-no-pb tw-hxkj">
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center">
+						<img src="images/hxkj.jpg" alt="">
+						<!-- <div class="overlay"></div>
+						<a href="#" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
+						<div class="text text-center p-4">
+							<h3><a href="#">核心科技</a></h3>
+							<span>一句话描述，不用可删除</span>
+						</div> -->
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- //核心科技 -->
+	<!-- 品牌荣誉 -->
+	<div class="row  ftco-animate">
+		<div class="tw-title tw-blue">
+		  <p>HONOR</p>
+		  <h2>品牌荣誉</h2>
+		</div>
+	</div>
+	<section class="home-slider owl-carousel t-banner tw-banner">
+		<div class="slider-item tw-honor">
+			<img src="images/rongyu1.jpg" alt="">
+		</div>
+
+		<div class="slider-item tw-honor">
+			<img src="images/rongyu2.jpg" alt="">
+		</div>
+
+		<div class="slider-item tw-honor" style="background-image:url(images/rongyu1.jpg);">
+			
+		</div>
+  
+		<div class="slider-item tw-honor" style="background-image:url(images/rongyu2.jpg);">
+  
+		</div>
+
+		<div class="slider-item tw-honor" style="background-image:url(images/rongyu1.jpg);">
+  
+		</div>
+	</section>
+	<!-- //品牌荣誉 -->
+	<!-- 报名表单 -->
+	<div class="row featurette tw-from bg-light  ftco-animate">
+		<div class="from-width">
+			<div class="col-md-12">
+			<h2 class="text-center title">活动期间，加盟费立享折扣优惠</h2>
+			<form action="#" class=" contact-form">
+				
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="姓名（已加密 ，请放心填写）">
+				</div>
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="电话（已加密 ，请放心填写）">
+				</div>
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="地区（已加密 ，请放心填写）">
+				</div>
+				<div class="form-group">
+				<input type="submit" value="立即获取加盟优惠" class="btn btn-primary py-2 px-5">
+				</div>
+			</form>
+			
+			</div>
+		</div>
+		</div>
+		<!-- //报名表单 -->
+
+
+		
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2">同程学堂</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">地址：203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">电话：+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">邮箱：info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="ftco-footer-widget mb-5 ml-md-4">
+              <h2 class="ftco-heading-2">课程介绍</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>课程介绍1</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>课程介绍2</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>课程介绍3</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>课程介绍4</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>课程介绍5</a></li>
+              </ul>
+            </div>
+		  </div>
+          <div class="col-4">
+            <div class="ftco-footer-widget mb-5 ml-md-4">
+              <h2 class="ftco-heading-2">关于我们</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>品牌简介</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>产品项目</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>优势特色</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>同程名师</a></li>
+                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>校区环境</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2">联系我们</h2>
+              <form action="#" class="subscribe-form">
+                <div class="form-group">
+				  <input type="submit" value="在线客服" class="form-control submit px-3" style="margin-bottom: 20px;">
+				  <input type="submit" value="在线留言" class="form-control submit px-3">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+			<p>北京众创同程教育科技有限责任公司</p>
+			<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div> -->
+
+  <!-- <script src="js/jquery.min.js"></script> -->
+
+  <script src="{dede:global.cfg_templets_skin/}/style/js/jquery.min.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/style/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/style/js/popper.min.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/style/js/bootstrap.min.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/style/js/jquery.easing.1.3.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/style/js/jquery.waypoints.min.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/style/js/jquery.stellar.min.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/style/js/owl.carousel.min.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/style/js/jquery.magnific-popup.min.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/style/js/aos.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/style/js/jquery.animateNumber.min.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/style/js/scrollax.min.js"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
+  <script src="{dede:global.cfg_templets_skin/}/style/js/google-map.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/style/js/main.js"></script>
+
+
+    
+  </body>
+</html>

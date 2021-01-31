@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{dede:global.cfg_webname/}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/animate.css">
+    
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/aos.css">
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/flaticon.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/icomoon.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/style.css">
+  </head>
+  <body>
+	  {dede:include filename="head_tc.htm"/}
+    <!-- END nav -->
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{dede:global.cfg_templets_skin/}/style/images/bg_1.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">{dede:field.title/}</h1>
+            <!-- <p class="breadcrumbs"><span class="mr-2">{dede:field name='position'/}</span></p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section contact-section">
+      <div class="container">
+        <div class="row block-9 justify-content-center mb-5">
+          <div class="col-md-8 mb-md-5">
+            <h2 class="text-center">同程学堂 <br>以父母情怀，做教育产业</h2>
+            <script type="text/javascript">
+              function beforeSubmit(form){
+              if(form.bmname.value==''){
+              alert('姓名不能为空！');
+              form.bmname.focus();
+              return false;
+              }
+              if(form.bmphone.value==''){
+              alert('电话不能为空！');
+              form.bmphone.focus();
+              return false;
+              }
+              if(form.bmphone.value.length<8){
+              alert('电话输入错误，请重新输入！');
+              form.bmphone.focus();
+              return false;
+              }
+              return true;
+              }
+            </script>
+            <form action="/plus/diy.php" class="bg-light p-5 contact-form" enctype="multipart/form-data" method="post" name="form"  onSubmit="return beforeSubmit(this);">
+              <input type="hidden" name="action" value="post" />
+              <input type="hidden" name="diyid" value="1" />
+              <input type="hidden" name="do" value="2" />
+              <div class="form-group">
+                <input type="text" name='bmname' id='bmname' class="form-control intxt" placeholder="姓名">
+              </div>
+              <div class="form-group">
+                <input type="text" name='bmphone' id='bmphone' class="form-control intxt" placeholder="手机">
+              </div>
+              <div class="form-group">
+                <textarea  name='bmmessage' id='bmmessage' cols="30" rows="7" class="form-control" placeholder="留言"></textarea>
+              </div>
+              <input type="hidden" name='bmdate' id='bmdate' class="form-control intxt" placeholder="时间">
+              <script type="text/javascript">
+                window.onload = function(){
+                var nowDate = new Date();
+                var str = nowDate.getFullYear()+"-"+(nowDate.getMonth() + 1)+"-"+nowDate.getDate()+" "+nowDate.getHours()+":"+nowDate.getMinutes()+":"+nowDate.getSeconds();
+                document.getElementById("bmdate").value=str;
+                }
+              </script>
+              <input type="hidden" name="dede_fields" value="bmname,text;bmphone,text;bmdate,text;bmmessage,multitext" />
+              <input type="hidden" name="dede_fieldshash" value="e749f06bb9b0769445255858cd980c54" /></table>
+              <div class="form-group">
+                <input type="submit" value="提交" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+    	<div class="container-fluid px-0">
+    		<div class="row justify-content-center">
+        	<div class="col-md-12">
+        		<div id="map" class="bg-white"></div>
+        	</div>
+        </div>
+    	</div>
+    </section>
+		
+  <!-- 页脚模板 -->
+	{dede:include filename="footer_tc.htm"/}
+    
+  </body>
+</html>

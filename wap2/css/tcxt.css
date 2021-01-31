@@ -1,0 +1,63 @@
+/* common */
+.tw-blue {
+    color: #005cac;
+  }
+  /* 品牌介绍 */
+  .tw-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .tw-title h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .tw-title p {
+    font-size: 16px;
+    margin-bottom: 0rem;
+  }
+  .tw-about {
+    margin-top: 3em;
+  }
+  .tw-about .tw-a-bg {
+    border: 1px solid #ff0000;
+    border-radius: 10px;
+    background: linear-gradient(150deg, #005dae, #005dae, #e40210, #e40210);
+    margin: 0 15px;
+    color: #FFFFFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .tw-about .tw-a-bg .left {
+    display: inline-block;
+    width: 39%;
+    height: 100%;
+    vertical-align: top;
+    padding-top: 10px;
+    border-right: 1px dashed #ffffff;
+  }
+  .tw-about .tw-a-bg .left h3 {
+    font-size: 18px;
+  }
+  .tw-about .tw-a-bg .right {
+    display: inline-block;
+    width: 59%;
+    vertical-align: top;
+    padding-top: 10px;
+  }
+  .tw-about .tw-a-bg .right p {
+    font-size: 0.8em;
+  }
+  .tw-from {
+    margin-top: 3em;
+  }
+  .tw-from .title {
+    font-size: 24px;
+    margin: 1.5em auto 1em;
+  }
+  .tw-from .from-width {
+    width: 100%;
+  }
+  .tw-from .btn {
+    width: 100%;
+  }

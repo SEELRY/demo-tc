@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>{dede:global.cfg_webname/}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/animate.css">
+    
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/aos.css">
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/flaticon.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/icomoon.css">
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/style.css">
+	<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/css/map.css"/>
+	<script>
+		//手机网站的url 只需改这一处地方即可。
+		var mobileUrl = '{dede:global.cfg_cmsurl/}/m';
+		var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+		var browser = navigator.userAgent.toLowerCase();
+		var isMobile = false;
+		for (var i=0; i<mobileAgent.length; i++){
+			if (browser.indexOf(mobileAgent[i])!=-1){
+				isMobile = true;
+				break;
+			}
+		}
+		if(isMobile){
+			//当前是手机或平板等小屏设备浏览，自动跳转到手机网站
+			location.href = mobileUrl;
+		}
+	 </script>
+  </head>
+  <body>
+	{dede:include filename="head_tc.htm"/}
+    <!-- END nav -->
+    <!-- banner图 -->
+    <section class="home-slider owl-carousel t-banner">
+		{dede:arclist  row="10" typeid="9" addfields='bannertext,bannerlink' channelid='18'}
+		<div class="slider-item" style="background-image:url([field:picname/]);">
+			<div class="overlay"></div>
+			<div class="container">
+			<div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+			<div class="col-md-7 ftco-animate">
+				<h1 class="mb-4">[field:title /]</h1>
+				<span class="subheading">[field:bannertext /]</span>
+				<p><a href="[field:bannerlink /]" class="btn btn-primary px-4 py-3 mt-3">了解详情</a></p>
+			</div>
+			</div>
+			</div>
+		</div>
+		{/dede:arclist}
+	</section>
+	<!-- //banner图 -->
+
+	<!-- 品牌简介 -->
+	<section class="ftco-section testimony-section t-about">
+		<div class="container">
+		  <div class="row justify-content-center">
+			<div class="col-md-8 text-center heading-section ftco-animate">
+			  <p class="t-scription">Separated they live in.</p>
+			  <h2 class="mb-4">品牌简介</h2>
+			</div>
+		  </div>
+		  <div class="row ftco-animate justify-content-center">
+			<div class="col-md-12">
+			  <div class="carousel-testimony owl-carousel">
+				<div class="item ftco-counter" id="section-counter">
+					<div class="container">
+						<div class="row d-md-flex align-items-center justify-content-center">
+						<div class="wrapper">
+							<div class="row d-md-flex align-items-center">
+							  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+								<div class="block-18">
+									<div class="icon"><span class="flaticon-doctor"></span></div>
+								  <div class="text">
+									<strong class="number">K</strong><strong class="number" data-number="12">0</strong>
+									<span>教育品牌</span>
+								  </div>
+								</div>
+							  </div>
+							  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+								<div class="block-18">
+									<div class="icon"><span class="flaticon-doctor"></span></div>
+								  <div class="text">
+									<strong class="number" data-number="13">0</strong><strong class="number">yr.</strong>
+									<span>辅导经验</span>
+								  </div>
+								</div>
+							  </div>
+							  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+								<div class="block-18">
+									<div class="icon"><span class="flaticon-doctor"></span></div>
+								  <div class="text">
+									<strong class="number" data-number="30">0</strong><strong class="number">+</strong>
+									<span>覆盖城市</span>
+								  </div>
+								</div>
+							  </div>
+							  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+								<div class="block-18">
+									<div class="icon"><span class="flaticon-doctor"></span></div>
+								  <div class="text">
+									<strong class="number" data-number="50">0</strong><strong class="number">+</strong>
+									<span>学习中心</span>
+								  </div>
+								</div>
+							  </div>
+							  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+								<div class="block-18">
+									<div class="icon"><span class="flaticon-doctor"></span></div>
+								  <div class="text">
+									<strong class="number" data-number="3">0</strong><strong class="number">K+</strong>
+									<span>实力师资</span>
+								  </div>
+								</div>
+							  </div>
+							  <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+								<div class="block-18">
+									<div class="icon"><span class="flaticon-doctor"></span></div>
+								  <div class="text">
+									<strong class="number" data-number="10">0</strong><strong class="number">W+</strong>
+									<span>受益学生</span>
+								  </div>
+								</div>
+							  </div>
+						  </div>
+					  	</div>
+						</div>
+					</div>
+					<div class="ftco-section ftco-counter">
+						{dede:arclist row="1" typeid="1" idlist="8" addfields='body' channelid='1'}
+						<div class="row justify-content-center mb-2 pb-2 d-flex">
+							<div class="col-md-6 align-items-stretch d-flex">
+								<div class="square"></div>
+								<div class="img img-video d-flex align-items-center" style="background-image: url([field:picname/]);">
+									
+									<!-- <div class="video justify-content-center">
+											<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+												<span class="ion-ios-play"></span>
+										  </a>
+									</div> -->
+								</div>
+							</div>
+							<div class="col-md-6 heading-section ftco-animate pl-lg-5 pt-md-0 pt-5">
+								<h2 class="mb-4">COMPANY <br> INTRODUCTION</h2>
+								<strong>[field:title /]</strong>
+								[field:body/]
+							</div>
+						</div>
+						{/dede:arclist}	
+					</div>
+				</div>
+				<div class="item section-2">
+					{dede:arclist row="1" typeid="10"}
+					  <img src="[field:picname/]" alt="同程学堂发展历程">
+					{/dede:arclist}	
+				</div>
+				<div class="item section-2 t-map">
+					<div class="map-service">
+						<div class="map-service-right">	
+							<div class="china-map">
+								<div class="disc">
+									<h2>布局概况</h2>
+									<p>同程学堂已进入中国大陆<span>30</span>多个城市，</p>
+									<p>旗舰校区<span>50+</span>，</p>
+									<p>拥有逾<span>3000</span>人的庞大师资教研团队，</p>
+									<p>以优质教育服务千千万万学子。</p>
+								</div>
+								<a href="#">
+								<div class="region-list waite postition-1 waite-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>济南市</span></div>
+								</div>
+								</a>
+								<a href="#">
+								<div class="region-list active postition-2 online-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>青岛市</span></div>
+								</div>
+								</a>
+								<a href="#">
+								<div class="region-list postition-3 online-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>淄博市</span></div>
+								</div>
+								</a>
+								<div class="region-list waite postition-4 waite-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>枣庄市</span></div>
+								</div>
+								<div class="region-list waite postition-5 waite-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>东营市</span></div>
+								</div>
+								<div class="region-list active postition-6 online-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>烟台市</span></div>
+								</div>
+								<div class="region-list active postition-7 online-node">
+									<div class="area-box">
+										<span class="dot"></span>
+										<span class="pulse delay-10"></span>
+										<span class="pulse delay-09"></span>
+										<span class="pulse delay-08"></span>
+									</div>
+									<div class="show-regin"><span>潍坊市</span></div>
+								</div>
+								<div class="region-list active postition-8 online-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>济宁市</span></div>
+								</div>
+								<div class="region-list active postition-9 online-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>泰安市</span></div>
+								</div>
+								<div class="region-list active postition-10 online-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>威海市</span></div>
+								</div>
+								<div class="region-list  active  postition-11 online-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>日照市</span></div>
+								</div>
+								<div class="region-list  postition-12 online-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>滨州市</span></div>
+								</div>
+								<div class="region-list active postition-13 online-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>德州市</span></div>
+								</div>
+								<div class="region-list active postition-14 online-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>聊城市</span></div>
+								</div>
+								<div class="region-list active postition-15 online-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>临沂市</span></div>
+								</div>
+								<div class="region-list active postition-16 online-node">
+									<div class="area-box">
+										<span class="dot"></span>
+									</div>
+									<div class="show-regin"><span>菏泽市</span></div>
+								</div>
+				
+								<!-- 校区地图 -->
+								{dede:arclist row="29" typeid="5" titlelen="50" addfields='city,address' channelid='21' orderby="id" orderway="desc}
+								<div class="region-list waite postition-[field:global name=autoindex runphp="yes"]@me=@me+20;[/field:global] waite-node school">
+									<div class="area-box">
+										<span class="dot"></span>
+										<span class="pulse delay-01"></span>
+										<span class="pulse delay-02"></span>
+									</div>
+									<div class="introduce" id="d-[field:global.autoindex/]">
+										<div class="d-left">
+											<img src="[field:picname/]" alt="">
+										</div>
+										<div class="d-right">
+											<h2>[field:title/]</h2>
+											<p>地址：[field:address/]</p>
+										</div>
+									</div>
+									<div class="show-regin" id="s-[field:global.autoindex/]"><span>[field:city/]</span></div>
+								</div>
+								{/dede:arclist}
+
+								<script type="text/javascript">
+
+									function myFn(am1,am2){
+										var myli = document.getElementById(am1);
+										var myul = document.getElementById(am2);
+										myli.onmouseover = function(){
+										  myul.style.display = 'block';
+										}
+										myli.onmouseout = function(){
+										   myul.style.display = 'none';
+									   }
+									}
+									myFn('s-1','d-1');
+									myFn('s-2','d-2');
+									myFn('s-3','d-3');
+									myFn('s-4','d-4');
+									myFn('s-5','d-5');
+									myFn('s-6','d-6');
+									myFn('s-7','d-7');
+									myFn('s-8','d-8');
+									myFn('s-9','d-9');
+									myFn('s-10','d-10');
+									myFn('s-11','d-11');
+									myFn('s-12','d-12');
+									myFn('s-13','d-13');
+									myFn('s-14','d-14');
+									myFn('s-15','d-15');
+									myFn('s-16','d-16');
+									myFn('s-17','d-17');
+									myFn('s-18','d-18');
+									myFn('s-19','d-19');
+									myFn('s-20','d-20');
+									myFn('s-21','d-21');
+									myFn('s-22','d-22');
+									myFn('s-23','d-23');
+									myFn('s-24','d-24');
+									myFn('s-25','d-25');
+									myFn('s-26','d-26');
+									myFn('s-27','d-27');
+									myFn('s-28','d-28');
+									myFn('s-29','d-29');
+								</script>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</section>
+	<!-- //品牌简介 -->
+
+	<!-- 产品项目 -->
+	<section class="ftco-section ftco-no-pb t-project">
+		<div class="container">
+		<div class="row no-gutters justify-content-center mb-5">
+			<div class="col-md-7 text-center heading-section ftco-animate">
+				<p class="t-scription">Course Products</p>
+				<h2 class="mb-4">课程产品</h2>
+				<p></p>
+			</div>
+		</div>
+			<div class="row no-gutters">
+			{dede:arclist row="6" typeid="2" titlelen="50" orderby="id" orderway="desc"}
+			  <div class="col-md-4">
+				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url([field:picname/]);">
+					<div class="overlay"></div>
+					<a href="[field:arcurl /]" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
+					<div class="text text-center p-4">
+						<h3><a href="[field:arcurl /]">[field:title/]</a></h3>
+						<span>[field:description/]</span>
+					</div>
+				</div>
+				<div class="t-title ftco-animate">[field:title/]</div>
+			  </div>
+			{/dede:arclist}  
+		</div>
+		</div>
+	</section>
+	<!-- //产品项目 -->
+
+	<!-- 优势特色 -->
+	<section class="ftco-section testimony-section t-about">
+		<div class="container">
+		  <div class="row justify-content-center">
+			<div class="col-md-8 text-center heading-section ftco-animate">
+			  <!-- <p class="t-scription">Separated they live in.</p>
+			  <h2 class="mb-4">品牌简介</h2> -->
+			</div>
+		  </div>
+		  <div class="row ftco-animate justify-content-center">
+			<div class="col-md-12">
+			  <div class="carousel-testimony owl-carousel">
+				{dede:arclist row="10" typeid="3" titlelen="50" orderby="id" orderway="asc"}  
+				<div class="item section-2">
+				  <img src="[field:picname/]" alt="[field:title/]">
+				</div>
+				{/dede:arclist} 
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</section>
+	<!-- //优势特色 -->
+
+	<!-- 同程名师 -->
+	<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb t-teacher" style="background-image: url({dede:global.cfg_templets_skin/}/style/images/bg_5.jpg);" data-stellar-background-ratio="0.5">
+    	<div class="overlay"></div>
+    	<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8 text-center heading-section ftco-animate">
+				  <h2 class="t-t-t mb-4">在线教育帮你请到好老师</h2>
+				  <p class="t-t-scription">打破时间空间限制，帮你请到适合的好老师</p>
+				</div>
+			  </div>
+    		<div class="row justify-content-star">
+    			<div class="col-md-6 py-5 px-md-5 t-t-box">
+    				<div class="py-md-5">
+		          <div class="heading-section heading-section-white ftco-animate mb-5">
+					<span class="what"><b>what</b>- 什么是掌门好老师?</span>
+					<ul>
+						<li>
+							<div class="what-logo">
+								<img src="{dede:global.cfg_templets_skin/}/style/images/degree.png" alt="好老师  高学历+高能力">
+							</div>
+							<div class="what-desc">
+								<p class="teachPositionTit">好老师 高学历+高能力</p>
+								<p class="teachPositionDesc">来自清华、北大等名校精英任教</p>
+							</div>
+						</li>
+						<li>
+							<div class="what-logo">
+								<img src="{dede:global.cfg_templets_skin/}/style/images/knowledge.png" alt="好老师  更懂考点">
+							</div>
+							<div class="what-desc">
+								<p class="teachPositionTit">好老师 更懂考点</p>
+								<p class="teachPositionDesc">紧抓各省命题趋势，同步考纲学习</p>
+							</div>
+						</li>
+						<li>
+							<div class="what-logo">
+								<img src="{dede:global.cfg_templets_skin/}/style/images/communicate.png" alt="好老师  更懂沟通">
+							</div>
+							<div class="what-desc">
+								<p class="teachPositionTit">好老师 更懂沟通</p>
+								<p class="teachPositionDesc">挖掘学习兴趣，0代沟让孩子爱上学习</p>
+							</div>
+						</li>
+					</ul>
+				  </div>
+				  <p><a href="#" class="btn btn-primary px-4 py-3 mt-3"> 立即预约好老师 </a></p>
+		    		</div>
+				</div>
+				<div class="col-md-6 py-5 px-md-5 ftco-animate t-profile-box">
+					{dede:arclist row="25" typeid="4" titlelen="50" addfields='title1,title2,discription,kind,xaxis,yaxis,profile' channelid='20' orderby="id" orderway="desc}
+					<div>
+
+						<div id="tc-[field:global.autoindex/]" class="t-profile-img"style="top: [field:xaxis/]px; left: [field:yaxis/]px; opacity: 1;">
+								<img src="[field:profile/]" alt="[field:title/]">
+						</div>
+						<div class="computer" id="tc-s-[field:global.autoindex/]" style="display: none;">
+							<div class="show-con">
+							<div class="lyh tea7">
+								<img class="avator" src="[field:picname/]" alt="[field:title/]">
+								<p class="name">[field:title/]</p>
+								<ul>
+									<li>[field:title1/]</li>
+									<li>[field:title2/]</li>
+								</ul>
+								<div class="achievements">
+									<p>[field:discription/]</p>
+								</div>
+								<div class="bottom"><span class="feature">教学特点：[field:kind/]</span><img src="/templets/tcxt/style/images/stars.png"></div>
+							</div>
+							</div>
+						</div>
+
+					</div>	
+					{/dede:arclist}
+				</div>
+            </div>
+		</div>
+		<script type="text/javascript">
+
+			function myFn(tm1,tm2){
+				var myli = document.getElementById(tm1);
+				var myul = document.getElementById(tm2);
+				myli.onmouseover = function(){
+				  myul.style.display = 'block';
+				}
+				myul.onmouseover = function(){
+				  myul.style.display = 'block';
+				}
+				myul.onmouseout = function(){
+				   myul.style.display = 'none';
+			    }
+			}
+			myFn('tc-1','tc-s-1');
+			myFn('tc-2','tc-s-2');
+			myFn('tc-3','tc-s-3');
+			myFn('tc-4','tc-s-4');
+			myFn('tc-5','tc-s-5');
+			myFn('tc-6','tc-s-6');
+			myFn('tc-7','tc-s-7');
+			myFn('tc-8','tc-s-8');
+			myFn('tc-9','tc-s-9');
+			myFn('tc-10','tc-s-10');
+			myFn('tc-11','tc-s-11');
+			myFn('tc-12','tc-s-12');
+			myFn('tc-13','tc-s-13');
+			myFn('tc-14','tc-s-14');
+			myFn('tc-15','tc-s-15');
+			myFn('tc-16','tc-s-16');
+			myFn('tc-17','tc-s-17');
+			myFn('tc-18','tc-s-18');
+			myFn('tc-19','tc-s-19');
+			myFn('tc-20','tc-s-20');
+			myFn('tc-21','tc-s-21');
+			myFn('tc-22','tc-s-22');
+			myFn('tc-23','tc-s-23');
+			myFn('tc-24','tc-s-24');
+			myFn('tc-25','tc-s-25');
+			myFn('tc-26','tc-s-26');
+			myFn('tc-27','tc-s-27');
+			myFn('tc-28','tc-s-28');
+			myFn('tc-29','tc-s-29');
+			myFn('tc-30','tc-s-30');
+		</script>
+	</section>
+	<section class="ftco-section testimony-section t-teacher2">
+		<div class="container">
+			<div class="row ftco-animate justify-content-center fadeInUp ftco-animated">
+				<img src="{dede:global.cfg_templets_skin/}/style/images/characteristic.png" alt="">
+			</div>
+			
+		</div>
+	</section>
+	<!-- //同城名师 -->
+
+	<!-- 校区环境 -->
+	<section class="ftco-section ftco-no-pb t-environment">
+		<div class="container">
+		<div class="row no-gutters justify-content-center mb-5">
+			<div class="col-md-7 text-center heading-section ftco-animate">
+				<h2 class="mb-4">环境<span>安静舒适</span>  学习 <span>氛围浓厚</span></h2>
+				<p></p>
+			</div>
+		</div>
+			<div class="row no-gutters">
+			<div class="col-md-4">
+				{dede:arclist row="1" typeid="13" titlelen="50" orderby="id" orderway="desc" limit="0,1"}
+				<div class="project img ftco-animate d-flex justify-content-center align-items-center higher" style="background-image: url([field:picname/]);">
+					<div class="overlay"></div>
+					<a href="[field:typeurl/]" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
+					<div class="text text-center p-4">
+						<h3><a href="[field:typeurl/]">[field:title/]</a></h3>
+						<span>[field:description/]</span>
+					</div>
+				</div>
+				{/dede:arclist}
+				{dede:arclist row="1" typeid="13" titlelen="50" orderby="id" orderway="desc" limit="1,1"}
+				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url([field:picname/]);">
+					<div class="overlay"></div>
+					<a href="[field:typeurl/]" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
+					<div class="text text-center p-4">
+						<h3><a href="[field:typeurl/]">[field:title/]</a></h3>
+						<span>[field:description/]</span>
+					</div>
+				</div>
+				{/dede:arclist}
+			</div>
+			<div class="col-md-4">
+				{dede:arclist row="1" typeid="13" titlelen="50" orderby="id" orderway="desc" limit="2,1"}
+				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url([field:picname/]);">
+					<div class="overlay"></div>
+					<a href="[field:typeurl/]" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
+					<div class="text text-center p-4">
+						<h3><a href="[field:typeurl/]">[field:title/]</a></h3>
+						<span>[field:description/]</span>
+					</div>
+				</div>
+				{/dede:arclist}
+				{dede:arclist row="1" typeid="13" titlelen="50" orderby="id" orderway="desc" limit="3,1"}
+				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url([field:picname/]);">
+					<div class="overlay"></div>
+					<a href="[field:typeurl/]" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
+					<div class="text text-center p-4">
+						<h3><a href="[field:typeurl/]">[field:title/]</a></h3>
+						<span>[field:description/]</span>
+					</div>
+				</div>
+				{/dede:arclist}
+				{dede:arclist row="1" typeid="13" titlelen="50" orderby="id" orderway="desc" limit="4,1"}
+				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url([field:picname/]);">
+					<div class="overlay"></div>
+					<a href="[field:typeurl/]" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
+					<div class="text text-center p-4">
+						<h3><a href="[field:typeurl/]">[field:title/]</a></h3>
+						<span>[field:description/]</span>
+					</div>
+				</div>
+				{/dede:arclist}
+			</div>
+
+			<div class="col-md-4">
+				{dede:arclist row="1" typeid="13" titlelen="50" orderby="id" orderway="desc" limit="5,1"}
+				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url([field:picname/]);">
+					<div class="overlay"></div>
+					<a href="[field:typeurl/]" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
+					<div class="text text-center p-4">
+						<h3><a href="[field:typeurl/]">[field:title/]</a></h3>
+						<span>[field:description/]</span>
+					</div>
+				</div>
+				{/dede:arclist}
+				{dede:arclist row="1" typeid="13" titlelen="50" orderby="id" orderway="desc" limit="6,1"}
+				<div class="project img ftco-animate d-flex justify-content-center align-items-center higher" style="background-image: url([field:picname/]);">
+					<div class="overlay"></div>
+					<a href="[field:typeurl/]" class="btn-site d-flex align-items-center justify-content-center"><span class="icon-subdirectory_arrow_right"></span></a>
+					<div class="text text-center p-4">
+						<h3><a href="[field:typeurl/]">[field:title/]</a></h3>
+						<span>[field:description/]</span>
+					</div>
+				</div>
+				{/dede:arclist}
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- //校区环境 -->
+
+	<!-- 合作机构 -->
+    <section class="ftco-section t-partner">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-2">
+				<div class="col-md-8 text-center heading-section ftco-animate">
+					<h2 class="mb-4">合作机构</h2>
+					<!-- <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p> -->
+				</div>
+			</div>
+			<div class="row no-gutters">
+				{dede:arclist row="1" typeid="8" titlelen="50" orderby="id" orderway="desc" limit="0,1"}
+				<div class="col-lg-2 d-flex">
+					<div class="services-2 noborder-left text-center noborder-bottom ftco-animate">
+						<div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="[field:picname/]" alt="[field:title/]"></div>
+					</div>
+				</div>
+				{/dede:arclist}
+				{dede:arclist row="1" typeid="8" titlelen="50" orderby="id" orderway="desc" limit="1,5"}
+				<div class="col-lg-2 d-flex">
+					<div class="services-2 text-center noborder-bottom ftco-animate">
+						<div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="[field:picname/]" alt="[field:title/]"></div>
+					</div>
+				</div>
+				{/dede:arclist}
+			</div>
+		</div>
+	</section>
+	<!-- //合作机构 -->
+	<!-- 底部悬浮 -->
+	<style>
+		.foot_fixed {
+			width: 100%;
+			height: 76px;
+			background: rgba(0,0,0,0.7);;
+			position: fixed;
+			bottom: 0;
+		}
+		.foot_fixed a {
+			color: #ffffff !important;
+		}
+		.w1200 {
+			width: 1110px;
+			height: auto;
+			margin: 0 auto;
+		}
+		.foot_fixed_word {
+			width: 660px;
+			line-height: 76px;
+			display: block;
+			float: left;
+			font-size: 30px;
+			color: #ffa82b;
+		}	
+		.foot_fixed_word a {
+			font-size: 44px;
+			color: white;
+		}
+		.foot_two {
+			width: 171px;
+			height: 46px;
+			line-height: 46px;
+			display: block;
+			background: url({dede:global.cfg_templets_skin/}/style/images/foot_right02.png) no-repeat;
+			float: right;
+			text-align: center;
+			font-size: 18px;
+			color: white;
+			margin-top: 15px;
+			margin-left: 16px;
+		}
+		.foot_one {
+			width: 171px;
+			height: 46px;
+			line-height: 46px;
+			display: block;
+			background: url({dede:global.cfg_templets_skin/}/style/images/foot_right01.png) no-repeat;
+			float: right;
+			text-align: center;
+			font-size: 18px;
+			color: white;
+			margin-top: 15px;
+		}
+	</style>
+	<div class="foot_fixed">
+		<div class="w1200">
+			<span class="foot_fixed_word">中国在线教育先行者<a>24年</a>教育大品牌</span>
+			<span class="foot_two"><a href="@" target="_blank">在线咨询</a></span>
+			<span class="foot_one"><a>400-880-8800</a></span>
+		</div>
+	</div>
+	<!-- 底部悬浮 -->
+		
+	<!-- 页脚模板 -->
+	{dede:include filename="footer_tc.htm"/}
+
+    
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/animate.css">
+    
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/aos.css">
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/flaticon.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/icomoon.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/style.css">
+  </head>
+  <body>
+    {dede:include filename="head_tc.htm"/}
+    <!-- END nav -->
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{dede:global.cfg_templets_skin/}/style/images/bg_1.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">{dede:field.title/}</h1>
+            <p class="breadcrumbs"><span class="mr-2">{dede:field name='position'/}</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section">
+			<div class="container">
+				<div class="row">
+          <div class="col-lg-8 ftco-animate">
+            <h2 class="mb-3">{dede:field.title/}</h2>
+            {dede:field.body/}
+            
+          </div> <!-- .col-md-8 -->
+
+          <div class="col-lg-4 sidebar ftco-animate">
+            {dede:arclist row="1" typeid="1" idlist="8" addfields='body' channelid='1'}
+            <div class="sidebar-box ftco-animate">
+              <h3>[field:title /]</h3>
+              [field:body/]
+            </div>
+            {/dede:arclist}	
+            <div class="sidebar-box ftco-animate">
+            	<h3>Category</h3>
+              <ul class="categories">
+                <li><a href="#">品牌简介 <span>more</span></a></li>
+                <li><a href="#">产品项目 <span>more</span></a></li>
+                <li><a href="#">优势特色 <span>more</span></a></li>
+                <li><a href="#">同程名师 <span>more</span></a></li>
+                <li><a href="#">校区环境 <span>more</span></a></li>
+                <li><a href="#">联系我们 <span>more</span></a></li>
+              </ul>
+            </div>
+
+
+
+          </div><!-- END COL -->
+        </div>
+			</div>
+		</section>
+		
+	<!-- 页脚模板 -->
+	{dede:include filename="footer_tc.htm"/}
+    
+  </body>
+</html>

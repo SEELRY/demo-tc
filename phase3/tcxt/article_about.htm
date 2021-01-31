@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{dede:field.title/}_{dede:global.cfg_webname/}123</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/animate.css">
+    
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/aos.css">
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/flaticon.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/icomoon.css">
+	<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/style/css/style.css">
+  </head>
+  <body>
+    {dede:include filename="head_tc.htm"/}
+    <!-- END nav -->
+    
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{dede:global.cfg_templets_skin/}/style/images/bg_1.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-2 bread">{dede:field.title/}</h1>
+            <!-- <p class="breadcrumbs"><span class="mr-2">{dede:field name='position'/}</span></p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-counter">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2 d-flex">
+    			<div class="col-md-6 align-items-stretch d-flex">
+    				<div class="img img-video d-flex align-items-center" style="background-image: url({dede:field.litpic /});">
+    					<div class="video justify-content-center">
+							</div>
+    				</div>
+    			</div>
+          <div class="col-md-6 heading-section ftco-animate pl-lg-5 pt-md-0 pt-5">
+            <h2 class="mb-4">{dede:field.title/}</h2>
+            {dede:field.body/}
+          </div>
+        </div>	
+			</div>
+		</section>
+
+		
+	<!-- 页脚模板 -->
+	{dede:include filename="footer_tc.htm"/}
+    
+  </body>
+</html>
